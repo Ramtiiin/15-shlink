@@ -1,0 +1,9 @@
+version: "3"
+services:
+    shlink:
+        image: shlinkio/shlink:stable
+        container_name: shlink
+        ports:
+            - "8080:8080"
+        environment:
+            - SHORT_DOMAIN_SCHEMA=http
